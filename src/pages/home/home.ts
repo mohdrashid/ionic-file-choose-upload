@@ -49,7 +49,7 @@ export class HomePage {
         chunkedMode: false,
         headers: {}
       }
-      fileTransfer.upload(this.uri, 'https://api.carvice.co/file/bill', options)
+      fileTransfer.upload(this.uri, 'https://localhost/file/bill', options)
         .then((data) => {
           this.uploadStatus=data.responseCode;
           this.uploadMessage=JSON.stringify(data.response);
