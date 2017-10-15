@@ -54,7 +54,7 @@ export class HomePage {
           this.uploadStatus=data.responseCode;
           this.uploadMessage=JSON.stringify(data.response);
           console.log(data+" Uploaded Successfully");
-          alert(JSON.stringify(data));
+          alert(JSON.stringify(data.response));
           loader.dismiss();
           this.presentToast("Image uploaded successfully");
       }, (err) => {
