@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Select and Upload to directory
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <button ion-button (click)="uploadFile()">Select File</button>
+  </ion-item>
+  <ion-item>
+    Filename: {{fileName}}
+  </ion-item>
+  <ion-item>
+    Status: {{uploadStatus}}
+  </ion-item>
+  <ion-item>
+    Response: 
+    <div class="item">{{uploadMessage}}</div>
+  </ion-item>
 </ion-content>
